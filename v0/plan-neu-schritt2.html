@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eingabe weiterer Daten und Auswahl der Kurse</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/forms.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/grid.css" />
+
+  </head>
+  <body>
+      
+    <header>
+      <img
+        src="assets/img/Study_Planner.webp"
+        width="90"
+        height="90"
+        alt="Bild wird nicht geladen!"
+      />
+      <h1>Study Planner</h1>
+    </header>
+    <nav>
+      <a href="index.html">Liste der Semersterpläne</a>
+      <a href="plan.html">Details zum Semesterplan</a>
+      <a href="kurs.html">Details zum Kurs</a>
+      <a href="plan-neu-schritt1.html">Neuen Kurs erstellen</a>
+    </nav>
+    
+
+    <main>
+      <h2>Eingabe weiterer Daten und Auswahl der Kurse</h2>
+      <form
+        action="https://edu.inf.fh-dortmund.de/planService/testCreatePlan.php"
+        method="post"
+      >
+        <fieldset>
+          <legend>Basisdaten: </legend>
+          <h2>Studiengang: Wirtschaftsinf. BPO 2018</h2>
+          <p>
+            <label class="required">  
+                Name:
+              <!-- \- macht man um deb bindestrich zu machen, weil er im normalfall eine sonder Bedeutung hat-->
+              <input
+                type="text"
+                name="name"
+                required
+                maxlength="150"
+                pattern="[A-Za-z0-9\- ]*"
+                placeholder="z.B. cedoe001"
+              />
+            </label>
+          </p>
+          </fieldset>
+          <fieldset>
+            <legend>Semester: </legend>
+          <p>
+            <label>
+              Semester:
+              <select name="semester" >
+                <option value="Sommersemester" selected>Sommersemester</option>
+                <option value="Wintersemester">Wintersemester</option>
+              </select>
+            </label>
+          </p>
+          
+          <p>
+            <label class="required">
+              Jahr:
+              <input
+                type="number"
+                name="jahr"
+                value="2025"
+                min="1900"
+                max="2099"
+                required
+              />
+            </label>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Kurse: </legend>
+          <p>
+            <label>
+              Kurse: <br />
+              <input
+                type="checkbox"
+                name="kurse[]"
+                value="Web-Technologien"
+              />Web-Technologien<br />
+              <input
+                type="checkbox"
+                name="kurse[]"
+                value="Logistikmanagement"
+              />Logistikmanagement<br />
+              <input
+                type="checkbox"
+                name="kurse[]"
+                value="Changemanagement"
+              />Changemanagement<br />
+              <input type="checkbox" name="kurse[]" value="ERP 1" />ERP 1<br />
+
+              <input
+                type="checkbox"
+                name="kurse[]"
+                value="DV-Recht"
+              />DV-Recht<br />
+            </label>
+            <!-- bei name macht man [] damit im Post mehrere Kurse ausgewählt werden können-->
+          </p>
+        </fieldset>
+
+        <button type="submit">Erstellen!</button>
+      </form>
+    </main>
+
+    <aside>
+      <h2>Aktuelle Meldungen</h2>
+      <ul>
+        <li>
+          22.05.2025: Die Vorlesung zu "Web-Technologien" findet am kommenden
+          Mittwoch abweichend in der Westfalenhalle 1 statt
+        </li>
+        <li>
+          16.04.2025: Die Veranstaltung "Lineare Algebra" muss in dieser Woche
+          leider Krankheitsbedingt entfallen
+        </li>
+      </ul>
+    </aside>
+
+    <footer>&copy; by WebTec Inc.</footer>
+  </body>
+</html>

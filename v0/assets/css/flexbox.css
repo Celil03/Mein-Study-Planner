@@ -1,0 +1,90 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+#container1{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+aside{
+    flex: 1 2 30%
+    
+}
+
+main{
+    flex: 3 1 70%
+}
+
+
+
+@media screen and (min-width: 1024px) {
+ #anfang {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+ }
+    
+}
+
+@media screen and (max-width: 1024px) {
+ nav{
+    flex-basis: auto;
+ }
+
+ }
+    
+@media screen and (max-width: 768px) {
+
+#container1{
+        display: flex;
+        flex-direction: column;
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+  }
+
+header h1 {
+    font-size: 1.5rem; 
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+
+#container1{
+        display: flex;
+        flex-direction: column;
+}
+
+header img {
+    width: 60px;
+    height: 60px;
+  }
+
+header h1 {
+    font-size: 1rem; 
+  }
+
+  nav{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /*Diese align-Items dinger sind wichtig zu lernen sehr guten Blick drauf werfen */
+  }
+  nav a{
+    flex-grow: 1;
+  }
+
+  aside{
+    display: none;
+  }
+
+
+}
+
+
+ 

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <title>Study Planner</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+     <link rel="stylesheet" type="text/css" href="assets/css/forms.css">
+     <link rel="stylesheet" type="text/css" href="assets/css/flexbox.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div id="anfang">
+    <header>
+      <img src="assets/img/Study_Planner.webp" width="90" height="90" alt="Bild wird nicht geladen!">
+      <h1>Study Planner</h1>
+    </header>
+    
+     <nav>
+      <a href="index.html">Liste der Semersterpläne</a>
+      <a href="plan.html">Details zum Semesterplan</a>
+      <a href="kurs.html">Details zum Kurs</a>
+      <a href="plan-neu-schritt1.html">Neuen Kurs erstellen</a>
+    </nav>
+    </div>
+    
+    <div id="container1">
+    <main>
+      <h2>Liste der Semersterpläne</h2>
+      <form>
+        <p>Pläne gruppieren nach:
+          <select name="gruppierung" id="gruppierung">
+            <option value="semester" selected>Semester</option>
+            <option value="studiengang">Studiengang</option>
+          </select>
+        </p>
+      </form>
+      
+      <section>
+        <h3>WiSe 25</h3>
+
+        <ul>
+          <li><a href="plan.html">WI-Plan (4 Kurse, 7 Stunden) </a></li>
+          <li><a href="plan.html">MI-Plan (5 Kurse, 8 Stunden) </a></li>
+          <li><a href="plan.html">PI-Plan (4 Kurse, 8 Stunden) </a></li>
+          <li><a href="plan.html">TI-Plan (5 Kurse, 7 Stunden) </a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>SoSe 26</h3>
+        <ul>
+          <li><a href="plan.html">WI-Plan (5 Kurse, 8 Stunden) </a></li>
+          <li><a href="plan.html">MI-Plan (4 Kurse, 7 Stunden) </a></li>
+          <li><a href="plan.html">PI-Plan (5 Kurse, 7 Stunden) </a></li>
+          <li><a href="plan.html">TI-Plan (4 Kurse, 6 Stunden) </a></li>
+        </ul>
+      </section>
+    </main>
+
+    <aside>
+      <h2>Aktuelle Meldungen</h2>
+      <ul>
+        <li>
+          22.05.2025: Die Vorlesung zu "Web-Technologien" findet am kommenden
+          Mittwoch abweichend in der Westfalenhalle 1 statt
+        </li>
+        <li>
+          16.04.2025: Die Veranstaltung "Lineare Algebra" muss in dieser Woche
+          leider Krankheitsbedingt entfallen
+        </li>
+      </ul>
+    </aside>
+    </div>
+    <footer>&copy; by WebTec Inc.</footer>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

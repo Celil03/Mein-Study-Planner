@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neuen Plan erstellen</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/forms.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/grid.css" />
+  </head>
+  <body>
+     
+    <header>
+      <img
+        src="assets/img/Study_Planner.webp"
+        width="90"
+        height="90"
+        alt="Bild wird nicht geladen!"
+      />
+      <h1>Study Planner</h1>
+    </header>
+    <nav>
+      <a href="index.html">Liste der Semersterpläne</a>
+      <a href="plan.html">Details zum Semesterplan</a>
+      <a href="kurs.html">Details zum Kurs</a>
+      <a href="plan-neu-schritt1.html">Neuen Kurs erstellen</a>
+    </nav>
+    
+
+    <main>
+      <h2>Neuen Plan erstellen</h2>
+      <form action="plan-neu-schritt2.html" method="get">
+        <fieldset>
+          <legend>Studiengang</legend>
+          <label for="studiengang" class="required">Studiengang: </label>
+          <select name="Studiengang" id="studiengang" required>
+            <option value="" disabled selected>Bitte wählen...</option>
+            <option value="Praktische Informatik">Praktische Informatik</option>
+            <option value="Technische Informatik">Technische Informatik</option>
+            <option value="Data Science">Data Science</option>
+            <option value="Medizinische Informatik">
+              Medizinische Informatik
+            </option>
+            <option value="Medizinische Informatik dual">
+              Medizinische Informatik dual
+            </option>
+            <option value="SST Dual (Softwaretechnik)">
+              SST Dual (Softwaretechnik)
+            </option>
+            <option value="SST dual (Systemtechnik)">
+              SST dual (Systemtechnik)
+            </option>
+            <option value="Informatik dual (Softwaretechnik)">
+              Informatik dual (Softwaretechnik)
+            </option>
+            <option value="Informatik dual (Netztechnik und Systemintegration)">
+              Informatik dual (Netztechnik und Systemintegration)
+            </option>
+            <option value="Wirtschaftsinformatik">Wirtschaftsinformatik</option>
+          </select>
+
+          <button type="submit">Weiter!</button>
+        </fieldset>
+      </form>
+    </main>
+
+    <aside>
+      <h2>Aktuelle Meldungen</h2>
+      <ul>
+        <li>
+          22.05.2025: Die Vorlesung zu "Web-Technologien" findet am kommenden
+          Mittwoch abweichend in der Westfalenhalle 1 statt
+        </li>
+        <li>
+          16.04.2025: Die Veranstaltung "Lineare Algebra" muss in dieser Woche
+          leider Krankheitsbedingt entfallen
+        </li>
+      </ul>
+    </aside>
+
+    <footer>&copy; by WebTec Inc.</footer>
+  </body>
+</html>

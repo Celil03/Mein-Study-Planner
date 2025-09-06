@@ -1,0 +1,46 @@
+input:invalid{
+    border-top: 3px solid red;  
+    border-left: 3px solid red;
+
+  background-color: white;
+}
+
+input:focus{
+    border-top: 3px solid blue;  
+    border-left: 3px solid blue;
+    background-color: yellow; /*fragen was mit außer select und Textarea gemeint ist*/
+}
+
+button[type="submit"]{
+    background-color: darkred;
+    color: white;
+    border: darkred;
+    border-radius: 5px;
+    width: 100px;
+    height: 20px;
+}
+
+button[type="submit"]:hover{
+    background-color: darkgreen;
+    
+}
+
+.required::after{
+    content: "(Erforderlich)";
+    font-size: 0.8em;
+    color: red;
+}
+
+legend{
+    border-radius: 5px;
+    background-color: darkorange;
+    color: white;
+    padding: 3px;
+    text-transform: uppercase;
+    border-top: 2px solid;
+    border-left: 2px solid;
+}
+input{
+    border-top: 3px solid;  
+    border-left: 3px solid;  
+}
